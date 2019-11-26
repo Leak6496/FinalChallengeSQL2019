@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Customer1119] (Table)
+       [dbo].[Interest1119] (Table)
+       [dbo].[Record1119] (Table)
+       [dbo].[Sale1119] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Customer1119] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Sale1119] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Sale1119] (Foreign Key)
+
+** Supporting actions

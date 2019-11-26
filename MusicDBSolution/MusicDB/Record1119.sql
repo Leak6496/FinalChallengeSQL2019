@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Record1119]
+(
+	[RecordID] NCHAR(10) NOT NULL PRIMARY KEY, 
+    [Title] NVARCHAR(50) NOT NULL, 
+    [Performer] NVARCHAR(50) NOT NULL
+)

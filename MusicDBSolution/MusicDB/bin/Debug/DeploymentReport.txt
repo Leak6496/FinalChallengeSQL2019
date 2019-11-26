@@ -1,0 +1,87 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Customer]
+       [dbo].[Sale]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[CUSTOMER].[CUSTID] is being dropped, data loss could occur.
+       The column [dbo].[CUSTOMER].[SALES_YTD] is being dropped, data loss could occur.
+       The column [dbo].[CUSTOMER].[STATUS] is being dropped, data loss could occur.
+       The column [dbo].[Customer].[CustNo] on table [dbo].[Customer] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The type for column CustName in table [dbo].[Customer] is currently  NVARCHAR (100) NULL but is being changed to 
+         NVARCHAR (50) NULL. Data loss could occur.
+       The column [dbo].[SALE].[CUSTID] is being dropped, data loss could occur.
+       The column [dbo].[SALE].[PRODID] is being dropped, data loss could occur.
+       The column [dbo].[SALE].[QTY] is being dropped, data loss could occur.
+       The column [dbo].[SALE].[SALEDATE] is being dropped, data loss could occur.
+       The column [dbo].[SALE].[SALEID] is being dropped, data loss could occur.
+       The column [dbo].[Sale].[CustNo] on table [dbo].[Sale] must be added, but the column has no default value and does not
+         allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add
+         a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+       The column [dbo].[Sale].[Date] on table [dbo].[Sale] must be added, but the column has no default value and does not
+         allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add
+         a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+       The column [dbo].[Sale].[RecordID] on table [dbo].[Sale] must be added, but the column has no default value and does not
+         allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add
+         a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[SALE] (Foreign Key)
+       unnamed constraint on [dbo].[SALE] (Foreign Key)
+     Table rebuild
+       [dbo].[Customer] (Table)
+       [dbo].[Sale] (Table)
+     Create
+       [dbo].[Interest] (Table)
+       [dbo].[Record] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Customer] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Sale] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Sale] (Foreign Key)
+
+** Supporting actions
+
+The column [dbo].[CUSTOMER].[CUSTID] is being dropped, data loss could occur.
+The column [dbo].[CUSTOMER].[SALES_YTD] is being dropped, data loss could occur.
+The column [dbo].[CUSTOMER].[STATUS] is being dropped, data loss could occur.
+The column [dbo].[Customer].[CustNo] on table [dbo].[Customer] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column CustName in table [dbo].[Customer] is currently  NVARCHAR (100) NULL but is being changed to  NVARCHAR (50) NULL. Data loss could occur.
+The column [dbo].[SALE].[CUSTID] is being dropped, data loss could occur.
+The column [dbo].[SALE].[PRODID] is being dropped, data loss could occur.
+The column [dbo].[SALE].[QTY] is being dropped, data loss could occur.
+The column [dbo].[SALE].[SALEDATE] is being dropped, data loss could occur.
+The column [dbo].[SALE].[SALEID] is being dropped, data loss could occur.
+The column [dbo].[Sale].[CustNo] on table [dbo].[Sale] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Sale].[Date] on table [dbo].[Sale] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Sale].[RecordID] on table [dbo].[Sale] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[ADD_COMPLEX_SALE].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[ADD_CUSTOMER].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[ADD_SIMPLE_SALE].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[ADD_TEST_SALE].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[DELETE_ALL_CUSTOMER].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[DELETE_ALL_SALES].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[DELETE_CUSTOMER].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[DELETE_SALE].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[GET_ALL_CUSTOMERS].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[GET_CUSTOMER_STRING].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[SUM_CUSTOMER_SALESYTD].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[UPD_CUST_SALEYTD].
+If this deployment is executed, changes to [dbo].[CUSTOMER] might introduce run-time errors in [dbo].[UPD_CUSTOMER_STATUS].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[ADD_COMPLEX_SALE].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[ADD_TEST_SALE].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[COUNT_PRODUCT_SALE].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[DELETE_ALL_SALES].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[DELETE_CUSTOMER].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[DELETE_PRODUCT].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[DELETE_SALE].
+If this deployment is executed, changes to [dbo].[SALE] might introduce run-time errors in [dbo].[GET_ALLSALES].
+

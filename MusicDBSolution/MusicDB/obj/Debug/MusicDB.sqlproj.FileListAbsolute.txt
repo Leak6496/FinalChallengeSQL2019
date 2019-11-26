@@ -1,0 +1,12 @@
+C:\Users\chhor\source\repos\MusicDBSolution\MusicDB\bin\Debug\MusicDB.dacpac
+C:\Users\chhor\source\repos\MusicDBSolution\MusicDB\bin\Debug\MusicDB.dll
+C:\Users\chhor\source\repos\MusicDBSolution\MusicDB\bin\Debug\MusicDB.pdb
+C:\Users\chhor\source\repos\MusicDBSolution\MusicDB\obj\Debug\MusicDB.sqlprojAssemblyReference.cache
+C:\Users\chhor\source\repos\MusicDBSolution\MusicDB\obj\Debug\MusicDB.dll
+C:\Users\chhor\source\repos\MusicDBSolution\MusicDB\obj\Debug\MusicDB.pdb
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\bin\Debug\MusicDB.dacpac
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\bin\Debug\MusicDB.dll
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\bin\Debug\MusicDB.pdb
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\obj\Debug\MusicDB.sqlprojAssemblyReference.cache
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\obj\Debug\MusicDB.dll
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\obj\Debug\MusicDB.pdb

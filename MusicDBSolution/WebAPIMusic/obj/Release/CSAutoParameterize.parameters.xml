@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DADICTWEB425Entities-Web.config Connection String" description="DADICTWEB425Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=dadserver.database.windows.net;initial catalog=DADICTWEB425;persist security info=True;user id=dadadmin;password=123!QWE19;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\chhor\\CertIV_Prog_SWIN\\ICTWEB425\\FinalChallengeSQL2019\\MusicDBSolution\\WebAPIMusic\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DADICTWEB425Entities']/@connectionString" />
+  </parameter>
+  <parameter name="DADICTWEB425Entities1-Web.config Connection String" description="DADICTWEB425Entities1 Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.MusicModel.csdl|res://*/Models.MusicModel.ssdl|res://*/Models.MusicModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=dadserver.database.windows.net;initial catalog=DADICTWEB425;persist security info=True;user id=dadadmin;password=123!QWE19;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\chhor\\CertIV_Prog_SWIN\\ICTWEB425\\FinalChallengeSQL2019\\MusicDBSolution\\WebAPIMusic\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DADICTWEB425Entities1']/@connectionString" />
+  </parameter>
+</parameters>

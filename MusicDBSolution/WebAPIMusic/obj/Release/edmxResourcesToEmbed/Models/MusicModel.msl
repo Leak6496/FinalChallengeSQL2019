@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DADICTWEB425ModelStoreContainer" CdmEntityContainer="DADICTWEB425Entities1">
+    <EntitySetMapping Name="Customer1119">
+      <EntityTypeMapping TypeName="DADICTWEB425Model.Customer1119">
+        <MappingFragment StoreEntitySet="Customer1119">
+          <ScalarProperty Name="CustNo" ColumnName="CustNo" />
+          <ScalarProperty Name="CustName" ColumnName="CustName" />
+          <ScalarProperty Name="CustAddr" ColumnName="CustAddr" />
+          <ScalarProperty Name="CustPostCode" ColumnName="CustPostCode" />
+          <ScalarProperty Name="InterestCode" ColumnName="InterestCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interest1119">
+      <EntityTypeMapping TypeName="DADICTWEB425Model.Interest1119">
+        <MappingFragment StoreEntitySet="Interest1119">
+          <ScalarProperty Name="InterestCode" ColumnName="InterestCode" />
+          <ScalarProperty Name="InterestDesc" ColumnName="InterestDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Record1119">
+      <EntityTypeMapping TypeName="DADICTWEB425Model.Record1119">
+        <MappingFragment StoreEntitySet="Record1119">
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Performer" ColumnName="Performer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sale1119">
+      <EntityTypeMapping TypeName="DADICTWEB425Model.Sale1119">
+        <MappingFragment StoreEntitySet="Sale1119">
+          <ScalarProperty Name="CustNo" ColumnName="CustNo" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

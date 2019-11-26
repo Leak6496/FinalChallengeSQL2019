@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MusicDB", "MusicDB\MusicDB.sqlproj", "{D8055CC3-B25F-4BD2-8A63-3AEAC1D6CA21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIMusic", "WebAPIMusic\WebAPIMusic.csproj", "{E7DB02C1-A70C-45D9-9FF8-D5E8D08DC8E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8055CC3-B25F-4BD2-8A63-3AEAC1D6CA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8055CC3-B25F-4BD2-8A63-3AEAC1D6CA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8055CC3-B25F-4BD2-8A63-3AEAC1D6CA21}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D8055CC3-B25F-4BD2-8A63-3AEAC1D6CA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8055CC3-B25F-4BD2-8A63-3AEAC1D6CA21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8055CC3-B25F-4BD2-8A63-3AEAC1D6CA21}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E7DB02C1-A70C-45D9-9FF8-D5E8D08DC8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DB02C1-A70C-45D9-9FF8-D5E8D08DC8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DB02C1-A70C-45D9-9FF8-D5E8D08DC8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DB02C1-A70C-45D9-9FF8-D5E8D08DC8E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D94CF6FF-B21A-40CA-A4AD-6FAC971F2A4E}
+	EndGlobalSection
+EndGlobal

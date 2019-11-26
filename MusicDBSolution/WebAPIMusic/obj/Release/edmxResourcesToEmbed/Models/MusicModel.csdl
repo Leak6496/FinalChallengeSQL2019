@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DADICTWEB425Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Customer1119">
+    <Key>
+      <PropertyRef Name="CustNo" />
+    </Key>
+    <Property Name="CustNo" Type="Int32" Nullable="false" />
+    <Property Name="CustName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustAddr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CustPostCode" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="InterestCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Interest1119" Relationship="Self.FK__Customer1__Inter__473C8FC7" FromRole="Customer1119" ToRole="Interest1119" />
+    <NavigationProperty Name="Sale1119" Relationship="Self.FK__Sale1119__CustNo__4830B400" FromRole="Customer1119" ToRole="Sale1119" />
+  </EntityType>
+  <EntityType Name="Interest1119">
+    <Key>
+      <PropertyRef Name="InterestCode" />
+    </Key>
+    <Property Name="InterestCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="InterestDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Customer1119" Relationship="Self.FK__Customer1__Inter__473C8FC7" FromRole="Interest1119" ToRole="Customer1119" />
+  </EntityType>
+  <EntityType Name="Record1119">
+    <Key>
+      <PropertyRef Name="RecordID" />
+    </Key>
+    <Property Name="RecordID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Performer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sale1119" Relationship="Self.FK__Sale1119__Record__4924D839" FromRole="Record1119" ToRole="Sale1119" />
+  </EntityType>
+  <EntityType Name="Sale1119">
+    <Key>
+      <PropertyRef Name="CustNo" />
+      <PropertyRef Name="RecordID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="CustNo" Type="Int32" Nullable="false" />
+    <Property Name="RecordID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Customer1119" Relationship="Self.FK__Sale1119__CustNo__4830B400" FromRole="Sale1119" ToRole="Customer1119" />
+    <NavigationProperty Name="Record1119" Relationship="Self.FK__Sale1119__Record__4924D839" FromRole="Sale1119" ToRole="Record1119" />
+  </EntityType>
+  <Association Name="FK__Customer1__Inter__473C8FC7">
+    <End Role="Interest1119" Type="Self.Interest1119" Multiplicity="0..1" />
+    <End Role="Customer1119" Type="Self.Customer1119" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Interest1119">
+        <PropertyRef Name="InterestCode" />
+      </Principal>
+      <Dependent Role="Customer1119">
+        <PropertyRef Name="InterestCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sale1119__CustNo__4830B400">
+    <End Role="Customer1119" Type="Self.Customer1119" Multiplicity="1" />
+    <End Role="Sale1119" Type="Self.Sale1119" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer1119">
+        <PropertyRef Name="CustNo" />
+      </Principal>
+      <Dependent Role="Sale1119">
+        <PropertyRef Name="CustNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sale1119__Record__4924D839">
+    <End Role="Record1119" Type="Self.Record1119" Multiplicity="1" />
+    <End Role="Sale1119" Type="Self.Sale1119" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Record1119">
+        <PropertyRef Name="RecordID" />
+      </Principal>
+      <Dependent Role="Sale1119">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DADICTWEB425Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customer1119" EntityType="Self.Customer1119" />
+    <EntitySet Name="Interest1119" EntityType="Self.Interest1119" />
+    <EntitySet Name="Record1119" EntityType="Self.Record1119" />
+    <EntitySet Name="Sale1119" EntityType="Self.Sale1119" />
+    <AssociationSet Name="FK__Customer1__Inter__473C8FC7" Association="Self.FK__Customer1__Inter__473C8FC7">
+      <End Role="Interest1119" EntitySet="Interest1119" />
+      <End Role="Customer1119" EntitySet="Customer1119" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sale1119__CustNo__4830B400" Association="Self.FK__Sale1119__CustNo__4830B400">
+      <End Role="Customer1119" EntitySet="Customer1119" />
+      <End Role="Sale1119" EntitySet="Sale1119" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sale1119__Record__4924D839" Association="Self.FK__Sale1119__Record__4924D839">
+      <End Role="Record1119" EntitySet="Record1119" />
+      <End Role="Sale1119" EntitySet="Sale1119" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

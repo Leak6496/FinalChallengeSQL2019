@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DADICTWEB425Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customer1119">
+    <Key>
+      <PropertyRef Name="CustNo" />
+    </Key>
+    <Property Name="CustNo" Type="int" Nullable="false" />
+    <Property Name="CustName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustAddr" Type="nvarchar(max)" />
+    <Property Name="CustPostCode" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="InterestCode" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Interest1119">
+    <Key>
+      <PropertyRef Name="InterestCode" />
+    </Key>
+    <Property Name="InterestCode" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="InterestDesc" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Record1119">
+    <Key>
+      <PropertyRef Name="RecordID" />
+    </Key>
+    <Property Name="RecordID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Performer" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sale1119">
+    <Key>
+      <PropertyRef Name="CustNo" />
+      <PropertyRef Name="RecordID" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="CustNo" Type="int" Nullable="false" />
+    <Property Name="RecordID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="money" />
+  </EntityType>
+  <Association Name="FK__Customer1__Inter__473C8FC7">
+    <End Role="Interest1119" Type="Self.Interest1119" Multiplicity="0..1" />
+    <End Role="Customer1119" Type="Self.Customer1119" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Interest1119">
+        <PropertyRef Name="InterestCode" />
+      </Principal>
+      <Dependent Role="Customer1119">
+        <PropertyRef Name="InterestCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sale1119__CustNo__4830B400">
+    <End Role="Customer1119" Type="Self.Customer1119" Multiplicity="1" />
+    <End Role="Sale1119" Type="Self.Sale1119" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer1119">
+        <PropertyRef Name="CustNo" />
+      </Principal>
+      <Dependent Role="Sale1119">
+        <PropertyRef Name="CustNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sale1119__Record__4924D839">
+    <End Role="Record1119" Type="Self.Record1119" Multiplicity="1" />
+    <End Role="Sale1119" Type="Self.Sale1119" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Record1119">
+        <PropertyRef Name="RecordID" />
+      </Principal>
+      <Dependent Role="Sale1119">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DADICTWEB425ModelStoreContainer">
+    <EntitySet Name="Customer1119" EntityType="Self.Customer1119" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Interest1119" EntityType="Self.Interest1119" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Record1119" EntityType="Self.Record1119" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sale1119" EntityType="Self.Sale1119" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Customer1__Inter__473C8FC7" Association="Self.FK__Customer1__Inter__473C8FC7">
+      <End Role="Interest1119" EntitySet="Interest1119" />
+      <End Role="Customer1119" EntitySet="Customer1119" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sale1119__CustNo__4830B400" Association="Self.FK__Sale1119__CustNo__4830B400">
+      <End Role="Customer1119" EntitySet="Customer1119" />
+      <End Role="Sale1119" EntitySet="Sale1119" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sale1119__Record__4924D839" Association="Self.FK__Sale1119__Record__4924D839">
+      <End Role="Record1119" EntitySet="Record1119" />
+      <End Role="Sale1119" EntitySet="Sale1119" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

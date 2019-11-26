@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="862f2ef84d6c484aa6e0f40d29c5e133" Name="Diagram1">
+        <EntityTypeShape EntityType="DADICTWEB425Model.Customer1119" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADICTWEB425Model.Interest1119" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADICTWEB425Model.Record1119" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADICTWEB425Model.Sale1119" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DADICTWEB425Model.FK__Customer1__Inter__473C8FC7" ManuallyRouted="false" />
+        <AssociationConnector Association="DADICTWEB425Model.FK__Sale1119__CustNo__4830B400" ManuallyRouted="false" />
+        <AssociationConnector Association="DADICTWEB425Model.FK__Sale1119__Record__4924D839" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

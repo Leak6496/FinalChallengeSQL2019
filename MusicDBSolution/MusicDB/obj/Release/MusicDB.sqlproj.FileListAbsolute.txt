@@ -1,0 +1,5 @@
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\bin\Release\MusicDB.dacpac
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\bin\Release\MusicDB.dll
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\bin\Release\MusicDB.pdb
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\obj\Release\MusicDB.dll
+C:\Users\chhor\CertIV_Prog_SWIN\ICTWEB425\FinalChallengeSQL2019\MusicDBSolution\MusicDB\obj\Release\MusicDB.pdb
